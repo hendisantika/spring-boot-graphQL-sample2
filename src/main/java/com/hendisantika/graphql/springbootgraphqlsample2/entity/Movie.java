@@ -25,7 +25,7 @@ import javax.persistence.Id;
 @ToString
 public class Movie {
     @Id
-    private String movieid;
+    private String movieId;
     private String movieName;
     private String releaseDate;
     private String[] actors;
