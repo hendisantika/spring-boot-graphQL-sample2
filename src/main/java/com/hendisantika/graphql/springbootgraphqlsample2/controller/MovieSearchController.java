@@ -1,5 +1,6 @@
 package com.hendisantika.graphql.springbootgraphqlsample2.controller;
 
+import com.hendisantika.graphql.springbootgraphqlsample2.datafetcher.AllMoviesDataFetcher;
 import com.hendisantika.graphql.springbootgraphqlsample2.datafetcher.MovieDataFetcher;
 import com.hendisantika.graphql.springbootgraphqlsample2.entity.Movie;
 import com.hendisantika.graphql.springbootgraphqlsample2.service.MovieService;
@@ -43,8 +44,8 @@ public class MovieSearchController {
     private Resource schemaResource;
 
     @Autowired
+    private AllMoviesDataFetcher allMoviesDataFetcher;
 
-    private allMoviesDataFetcher allMoviesDataFetcher;
     @Autowired
     private MovieDataFetcher movieDataFetcher;
 
